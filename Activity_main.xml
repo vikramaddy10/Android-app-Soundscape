@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="374dp"
+        android:layout_weight="1.13" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play"
+            android:id="@+id/birdplay"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play"
+            android:id="@+id/rainplay"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="RAIN"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/rainplay"
+            android:layout_alignLeft="@+id/rainplay"
+            android:layout_alignStart="@+id/rainplay"
+            android:id="@+id/rain" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="BIRDS"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/birdplay"
+            android:layout_alignLeft="@+id/birdplay"
+            android:layout_alignStart="@+id/birdplay"
+            android:id="@+id/birds" />
+    </RelativeLayout>
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_weight="0" />
+
+
+
+</LinearLayout>
