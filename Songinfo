@@ -1,0 +1,37 @@
+package com.example.aditya.mp3_player;
+
+/**
+ * Created by User on 20-07-2018.
+ */
+
+public class SongInfo {
+    public String songName,artistName,songUrl;
+
+    public SongInfo(String songName, String artistName, String songUrl) {
+        this.songName = songName;
+        this.artistName = artistName;
+        this.songUrl = songUrl;
+    }
+
+    public String getSongName() {
+        return songName;
+    }
+    public void setSongname(String songname) {
+        songName = songname;
+    }
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public void setArtistname(String artistname) {
+        artistName = artistname;
+    }
+
+    public String getSongUrl() {
+        return songUrl;
+    }
+
+    public void setSongUrl(String songurl) {
+        songUrl = songurl;
+    }
+}
